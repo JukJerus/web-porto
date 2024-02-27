@@ -1,0 +1,252 @@
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+
+header.navbar-container {
+  width: 100%;
+  height: 80px;
+
+  list-style: none;
+  display: flex;
+  padding: 10px;
+
+  justify-content: space-between;
+
+  background-color: #727272;
+
+  /* position: sticky;
+    top: 0; */
+}
+
+header.navbar-container .logo {
+  color: white;
+  font-weight: bold;
+  align-self: center;
+  font-size: 2rem;
+  margin-left: 50px;
+}
+
+header.navbar-container nav {
+  align-self: center;
+  margin-right: 100px;
+}
+
+header.navbar-container nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  align-self: center;
+}
+
+header.navbar-container nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 10px;
+}
+
+header.navbar-container nav ul li a:hover {
+  background-color: #d9bab3;
+  transition: 0.5s;
+  border-radius: 15px;
+  color: black;
+}
+
+main .content {
+  display: flex;
+  background-color: #727272;
+  padding: 20px;
+
+  justify-content: space-evenly;
+}
+
+main aside img {
+  width: 300px;
+  margin-bottom: 100px;
+}
+
+main .content .description {
+  color: white;
+
+  width: 50%;
+
+  align-self: center;
+}
+
+main .content .description .button {
+  background-color: #d9bab3;
+  margin-top: 10px;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+main .content .description button {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  padding: 8px;
+  margin-top: 10px;
+  font-size: 1rem;
+  background-color: #d9bab3;
+  border: none;
+  border-radius: 10px;
+  width: 200px;
+  border: 3px solid #d9bab3;
+
+  cursor: pointer;
+  transition: all 0.15s ease-in;
+}
+
+main .content .description button a {
+  text-decoration: none;
+  color: black;
+}
+main .content .description button:hover {
+  background-color: transparent;
+  color: white;
+}
+
+article#about-me {
+  padding: 40px;
+}
+
+article#about-me .story h1 {
+  text-align: center;
+  font-size: 40px;
+}
+
+article#about-me .container {
+  color: black;
+  /* background-color: #727272; */
+  padding: 20px;
+  border-radius: 30px;
+}
+article#about-me .container h1 {
+  text-align: center;
+  font-size: 40px;
+}
+article#about-me .container .story {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  gap: 4.5pc;
+}
+
+article#about-me .story .story-description {
+  width: 60%;
+  padding: 20px 5px;
+}
+
+article#about-me .gambar img {
+  width: 400px;
+  border-radius: 30px;
+}
+
+article#skill {
+  background-color: #e7e7e7;
+  padding: 50px;
+  text-align: center;
+  font-size: 30px;
+}
+
+article#skill .container {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 20px;
+  gap: 10px;
+}
+
+#skill .container .card {
+  padding: 5px;
+  background-color: #727272;
+  padding: 20px;
+  border-radius: 30px;
+  color: white;
+  width: 30%;
+  margin-block: 10px;
+}
+
+#skill .container .card p {
+  font-size: 12px;
+  text-align: start;
+}
+#skill .container .card img {
+  width: 60px;
+}
+
+article#contact {
+  /* display: flex; */
+  padding: 60px;
+  justify-content: center;
+  text-align: center;
+}
+
+article#contact .title {
+  color: black;
+  font-size: 35px;
+  font-weight: 700;
+}
+
+article#contact .social-media ul {
+  /* background-color: #2d3e50; */
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  list-style: none;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+article#contact .social-media ul li a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: black;
+  transition: all 0.1s ease-in-out;
+}
+
+article#contact .social-media ul li a:hover {
+  font-size: 3rem;
+}
+
+footer {
+  background-color: #727272;
+  text-align: center;
+  padding: 20px;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  header.navbar-container {
+    flex-direction: column;
+  }
+
+  header.navbar-container nav ul {
+    flex-wrap: wrap;
+    column-gap: 0.5rem;
+  }
+
+  main .content {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  article#about-me .container .story {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  article#skill .container .card {
+    width: 40%;
+  }
+}
