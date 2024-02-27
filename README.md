@@ -29,7 +29,7 @@ Welcome to my portfolio website! This project was created as part of my final pr
 
 ## How to Access
 
-You can visit my portfolio [here](insert-portfolio-link).
+You can visit my portfolio [here](https://jukjerus.github.io/final-project-dicoding/).
 
 Feel free to explore and reach out if you have any questions or collaboration inquiries.
 
