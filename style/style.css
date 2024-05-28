@@ -125,7 +125,7 @@ article#about-me .story h1 {
 article#about-me .container {
   color: black;
   /* background-color: #727272; */
-  padding: 20px;
+  padding: 20px; 
   border-radius: 30px;
 }
 article#about-me .container h1 {
@@ -134,16 +134,8 @@ article#about-me .container h1 {
 }
 article#about-me .container .story {
   margin-top: 40px;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: center;
-  gap: 4.5pc;
 }
 
-article#about-me .story .story-description {
-  width: 60%;
-  padding: 20px 5px;
-}
 
 article#about-me .gambar img {
   width: 400px;
