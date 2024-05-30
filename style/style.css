@@ -269,7 +269,13 @@ footer {
 
   main .content {
     flex-direction: column-reverse;
+    /* gap: 20px; */
     align-items: center;
+  }
+
+  main .content aside img{
+    width: 200px;
+    margin-top: 40px;
   }
 
   article#about-me .container .story {
@@ -277,7 +283,21 @@ footer {
     align-items: center;
   }
 
-  article#skill .container .card {
-    width: 40%;
+  article#skill .container .cards {
+    width: 70%;
   }
+
+  article#project .container{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+  }
+
+  article#project .container .item img{
+    width: 20rem;
+  }
+
+  /* #contact .social-media ul li a i{
+    width: 60px;
+  } */
 }
