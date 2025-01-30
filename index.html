@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Proyek Akhir</title>
+    <title>Portfolio Maul</title>
     <link rel="icon" href="img/icon.svg" />
 
     <!-- My Own CSS -->
@@ -22,6 +22,8 @@
 
     <!-- animate on scroll -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
     <!-- bootstrap -->
     <link
@@ -55,17 +57,16 @@
 
     <main>
       <div class="content">
+        <aside>
+          <img src="img/baru.png" alt="" />
+        </aside>
         <div class="description">
-          <h1>Hi, I'm Maulana</h1>
+          <h1><span id="nama"></span></h1>
           <p>I'm a web developer and a student at the University State of Jakarta.</p>
           <button>
             <a href="asset/CV_MuhammadShafwanMaulana.pdf" download>Download CV</a>
           </button>
         </div>
-
-        <aside>
-          <img src="img/baru.png" alt="" />
-        </aside>
       </div>
 
       <div data-aos="fade-up" data-aos-duration="1000">
@@ -159,7 +160,7 @@
         <h2 data-aos="fade-up"><i class="bi bi-patch-check"></i> Certificate</h2>
         <div
           id="carouselExampleCaptions"
-          class="carousel slide"
+          class="carousel carousel-dark slide"
           data-bs-ride="carousel"
           data-aos="zoom-in"
         >
@@ -272,12 +273,24 @@
     <footer>
       <p>&#169; Muhammad Shafwan Maulana | All Right Reserved</p>
     </footer>
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed("#nama", {
+        strings: ["Hi, I'm Maulana",],
+        typeSpeed: 100,
+        cursorChar: "_",
+      });
+    </script>
 
     <!-- AOS -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
+
 
     <!-- bootstrap -->
     <script
